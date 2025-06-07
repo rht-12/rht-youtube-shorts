@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 
 @Entity
 @NoArgsConstructor
@@ -24,7 +23,7 @@ public class Shorts {
     private String videoTitle;
 
     @Column(name = "upload_date", nullable = false)
-    private LocalDate uploadDate;
+    private String uploadDate;
 
     @Column(name = "video_length", nullable = false)
     private long videoLength;
